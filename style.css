@@ -1277,7 +1277,23 @@ a.link-re:hover{
 .bt_link{font-family: Verdana, Geneva, sans-serif;font-size: 10px;font-weight: bold; margin-left: 5px;}
 .bt_exibir{font-family: Verdana, Geneva, sans-serif;font-size: 10px;font-weight: bold; color: #00F;}
 
-/* CSS P�GINA M�DICOS*/
+/* CSS TEMAS E PROCEDIMENTOS */
+.cada-post {
+	max-width: 980px;
+}
+
+.thumb-cada-post {
+	float: left;
+	width: 30%;
+}
+
+.content-cada-post {
+	float: left;
+	width: 70%;
+}
+
+
+/* CSS PAGINA MEDICOS */
 
 #medicos {
 	width: 597px;
