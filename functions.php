@@ -28,7 +28,6 @@ if(!is_admin()) {
 register_nav_menu( 'um', __( 'Primeiro Menu Rodape', 'twentyeleven' ) );
 register_nav_menu( 'dois', __( 'Segundo Menu Rodape', 'twentyeleven' ) );
 register_nav_menu( 'tres', __( 'Terceiro Menu Rodape', 'twentyeleven' ) );
-register_nav_menu( 'quatro', __( 'Quarto Menu Rodape', 'twentyeleven' ) );
 
 // Função para imprimir o nome do menu
 function echo_name_menu( $location ) {

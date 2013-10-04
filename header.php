@@ -59,7 +59,7 @@
 
 	<div class="linguas">
 <?php
-  /*global $q_config;
+  global $q_config;
   if(is_404()) $url = get_option('home'); else $url = '';
   echo '<ul id="headerMenuSystem">';
 
@@ -75,7 +75,7 @@
     echo '></a></div>';
   }
 
-  echo '</ul>'; */
+  echo '</ul>';
 ?>
 	
     </div><!-- .linguas -->
