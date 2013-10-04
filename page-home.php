@@ -53,7 +53,6 @@ get_header(); ?>
                 
 				</div><!-- #slider-single -->
 
-
     </div><!-- #direita-segundo-conteudo -->
 </div><!-- #segundo-conteudo -->
 

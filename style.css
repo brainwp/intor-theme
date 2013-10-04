@@ -798,18 +798,26 @@ a.a-btn-home:hover {
 
 .titulo-cada-noticia-home {
 	width: 100%;
-	background: #0e2946;
+	background: #225273;
 	margin: 0;
 	padding: 15px 0;
     height: auto;
 }
 
-.titulo-cada-noticia-home h2 {
+.titulo-home-noticias {
+	margin: 25px 0 20px 30px;
+}
+
+#noticias-home .titulo-cada-noticia-home h2 {
 	margin: 0 0 0 30px;
 }
 
-.titulo-cada-noticia-home h2 a {
-	color: #fff;
+#noticias-home  .titulo-cada-noticia-home h2 a {
+	color: #FFF;
+}
+
+#noticias-home  .titulo-cada-noticia-home h2 a:hover {
+	color: #CAD8DC;
 }
 
 .thumb-cada-noticia-home:hover {
