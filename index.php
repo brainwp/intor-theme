@@ -44,8 +44,10 @@ get_header(); ?>
 
 	<div class="<?php echo $class_noticias; ?>">
     	<div <?php thumbnail_bg( 'noticias-home' ); ?> class="thumb-cada-noticia-home">
-        	<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
         </div><!-- .thumb-cada-noticia-home -->
+        <div class="titulo-cada-noticia-archive">
+        	<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+        </div><!-- .titulo-cada-noticia-archive -->
     	<div class="content-cada-noticia-archive">
         	<?php the_excerpt(); ?>
         </div><!-- .content-cada-noticia-archive -->

@@ -796,7 +796,7 @@ a.a-btn-home:hover {
 	background: #FFF;
 }
 
-.titulo-cada-noticia-home {
+.titulo-cada-noticia-home , .titulo-cada-noticia-archive {
 	width: 100%;
 	background: #225273;
 	margin: 0;
@@ -808,12 +808,22 @@ a.a-btn-home:hover {
 	margin: 25px 0 20px 30px;
 }
 
-#noticias-home .titulo-cada-noticia-home h2 {
+#noticias-home .titulo-cada-noticia-home h2, .titulo-cada-noticia-archive h2 {
 	margin: 0 0 0 30px;
 }
 
 #noticias-home  .titulo-cada-noticia-home h2 a {
 	color: #FFF;
+}
+
+.titulo-cada-noticia-archive h2 a {
+	color: #FFF;
+	text-decoration: none;
+}
+
+.titulo-cada-noticia-archive h2 a:hover {
+	color: #CAD8DC !important;
+	text-decoration: none !important;
 }
 
 #noticias-home  .titulo-cada-noticia-home h2 a:hover {
@@ -1611,12 +1621,11 @@ a.a-btn-home:hover {
 	margin: 0 0 20px 0;
 	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 }
-#conteudo-interno h1,
-#conteudo-interno a {
-	color: #215272;
-	line-height: 1.5em;
-	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-	text-decoration: none;
+#conteudo-interno h1 {
+    color: #215272;
+    font-family: "Trebuchet MS",Arial,Helvetica,sans-serif;
+    font-size: 3em;
+    text-decoration: none;
 }
 #conteudo-interno a:hover {
 	text-decoration: underline;
