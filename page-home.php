@@ -39,7 +39,7 @@ get_header(); ?>
 							<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 
                             <li>
-								<?php the_title(); ?>
+								<b><?php the_title(); ?></b>
 								<?php the_content(); ?>
                             </li>
 

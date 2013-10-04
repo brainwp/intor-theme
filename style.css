@@ -31,6 +31,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 }
 body {
 	line-height: 1.4em;
+	font-size: 62.5%;
 }
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
@@ -115,7 +116,7 @@ body,
 input,
 textarea,
 .pingback a.url {
-	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-family: "Source Sans Pro",Arial,Helvetica,sans-serif;
 }
 h3#comments-title,
 h3#reply-title,
@@ -153,7 +154,24 @@ pre {
 code {
 	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 }
-
+h1 {
+	font-size: 2.2em;
+}
+h2 {
+	font-size: 2em;
+}
+h3 {
+	font-size: 1.8em;
+}
+h4 {
+	font-size: 1.6em;
+}
+h5 {
+	font-size: 1.4em;
+}
+h6 {
+	font-size: 1.2em;
+}
 
 /* =Structure
 -------------------------------------------------------------- */
@@ -166,12 +184,10 @@ code {
 #wrapper {
 	margin: 0 auto;
 	max-width: 980px;
-}
-#wrapper {
 	background: #E9EEF2;
-	margin-top: 0;
 	padding: 0;
 	width: auto;
+}
 }
 
 /* Structure the footer area */
@@ -188,7 +204,6 @@ code {
 }
 #site-info {
 	float: left;
-	font-size: 14px;
 	font-weight: bold;
 	max-width: 700px;
 }
@@ -206,8 +221,7 @@ body,
 input,
 textarea {
 	color: #666;
-	font-size: 12px;
-	line-height: 18px;
+	line-height: 1.8em;
 }
 hr {
 	background-color: #e7e7e7;
@@ -219,7 +233,8 @@ hr {
 
 /* Text elements */
 p {
-	margin-bottom: 18px;
+	font-size: 1.5em;
+	margin-bottom: 15px;
 }
 ul {
 	list-style: square;
@@ -341,25 +356,15 @@ body {
 }
 
 h1 {
-		color: #215272;
-		font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-}
-
-h2, h3, h4, h5, #conteudo-interno h2, #conteudo-interno h3, #conteudo-interno h4, #conteudo-interno h5, #conteudo-interno h6, {
-		color: #333;
-		font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-}
-
-h1 {
-		letter-spacing: -1px;
-		margin: 0px 0px 20px 15px;
-		font-size: 22px;
+	color: #215272;
+	font-family: "Source Sans Pro",Arial,Helvetica,sans-serif;
+	letter-spacing: -1px;
+	margin: 0px 0px 20px 15px;
 }
 
 h2 {
 		letter-spacing: -1px;
 		margin: 15px 0px 10px 15px;
-		font-size: 18px;
 }
 
 a {
@@ -387,20 +392,22 @@ a:hover{
 	overflow: hidden;
 }
 
+#geral li p {
+	font-size: inherit;
+}
+
 #geral li {
-		color: #333;
-		font-family: Verdana, Arial, Helvetica, sans-serif;
-		font-size: 11px;
-		line-height: 15px;
-		margin-left: 0;
+	color: #333;
+	font-family: "Source Sans Pro",Arial,Helvetica,sans-serif;
+	margin-left: 0;
+	font-size: 1.5em;
 }
 
 #geral .ilustracao {
-		border:4px solid white;
-		/*float:left;*/
-		margin:10px 0 5px 10px;
-		outline:1px solid #CCCCCC;
-		
+	border:4px solid white;
+	/*float:left;*/
+	margin:10px 0 5px 10px;
+	outline:1px solid #CCCCCC;
 }
 
 #geral .ilustracao-campanha {
@@ -412,15 +419,12 @@ a:hover{
 }
 
 #geral p.legenda {
-		margin: 0 0 15px 14px;
-		font-style: italic;
-		font-size: 10px;
-		color: #333;
-
+	margin: 0 0 15px 14px;
+	font-style: italic;
+	color: #333;
 }
 
 /*CABE�ALHO*/
-
 #cabecalho {
 	background: url(images/fundo-cabecalho.jpg) ;
 	max-width: 980px;
@@ -429,32 +433,33 @@ a:hover{
 	overflow: hidden;
 	position: relative;
 }
-
 #logo {
-		background: url(images/fundo-logo.gif) no-repeat center ;
-		width: 226px;
-		height: 102px;
-		margin: 29px 0 0 61px;
-		float: left;
+	background: url(images/fundo-logo.gif) no-repeat center ;
+	width: 226px;
+	height: 102px;
+	margin: 29px 0 0 61px;
+	float: left;
 }
-
 #botao-cadastre-se {
-		width: 101px;
-		height: 35px;
-		margin: 0;
-		float: rigth;
+	width: 101px;
+	height: 35px;
+	margin: 0;
+	float: rigth;
 }
 
-/* MENU */
-
-
-/* =Menu
+/* =MENU
 -------------------------------------------------------------- */
+#access {
+	background: #114569;
+	height: 50px;
+	max-width: 980px;
+	z-index: 1000;
+	font-size: 1.5em;
+}
 #access .menu {
-	font-size: 12px;
-	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	line-height: 1.6em;
+	font-family: "Source Sans Pro",Arial,Helvetica,sans-serif;
 	margin-left: 16px;
-	font-weight: bold;
 }
 #access .menu ul {
 	list-style: none;
@@ -475,7 +480,7 @@ a:hover{
 #access ul ul {
 	display: none;
 	position: absolute;
-	top: 34px;
+	top: 50px;
 	left: 0;
 	float: left;
 	width: 180px;
@@ -489,7 +494,7 @@ a:hover{
 	top: 0;
 }
 #access ul ul a {
-	line-height: 1em;
+	line-height: 1.8em;
 	padding: 10px;
 	width: 160px;
 	height: auto;
@@ -500,7 +505,7 @@ a:hover{
 	color: #ccc;
 }
 #access ul li:hover > ul {
-	background: url(images/fundo-submenu.jpg) repeat-x top #0e2946;
+	background: url(images/fundo-submenu.jpg) repeat-x top #215273;
 	display: block;
 }
 #access ul li.current_page_item > a,
@@ -517,13 +522,8 @@ a:hover{
 	color: #ccc;
 }
 
-#access {
-	background: #114569;
-	height: 50px;
-	max-width: 980px;
-	z-index: 1000;
-}
-
+/* =CONTEUDO
+-------------------------------------------------------------- */
 #conteudo {
 	background: url(images/fundo-conteudo.jpg) no-repeat top #e8eef2;
 	max-width: 980px;		
@@ -553,9 +553,6 @@ a:hover{
     width: 57%;
 }
 
-#introducao {
-}
-
 .equipe-home {
 	margin: 40px 0 20px 15px;
 }
@@ -573,7 +570,7 @@ a.continue-reading:hover {
 }
 
 a.continue-externo {
-	font-family: Verdana, Geneva, sans-serif;
+	font-family: "Source Sans Pro",Arial,Helvetica,sans-serif;
 	display: block;
 	color: #215272;
 }
@@ -593,8 +590,6 @@ a.continue-externo:hover {
 #introducao p, #conteudo-direito p {
     color: #222;
     font-family: 'Source Sans Pro',Arial,Helvetica,sans-serif;
-    font-size: 1.2em;
-    letter-spacing: 0.05em;
     line-height: 1.4em;
     margin-left: 30px;
 }
@@ -636,11 +631,10 @@ a.continue-externo:hover {
 }
 
 #destaque01-superior-texto p {
-		color: #333;
-		font-family: Verdana, Arial, Helvetica, sans-serif;
-		font-size: 11px;
-		line-height: 15px;
-		margin-left: 0px;
+	color: #333;
+	font-family: "Source Sans Pro",Arial,Helvetica,sans-serif;
+	line-height: 15px;
+	margin-left: 0px;
 }
 
 #destaque01-inferior {
@@ -664,14 +658,12 @@ a.continue-externo:hover {
 }
 
 #destaque01-inferior-texto p{
-		color: #333;
-		font-family: Verdana, Arial, Helvetica, sans-serif;
-		font-size: 11px;
-		line-height: 15px;
+	color: #333;
+	font-family: "Source Sans Pro",Arial,Helvetica,sans-serif;
+	line-height: 15px;
 }
 
 .link-re {
-    font-size: 14px;
     margin: 0 0 0 15px;
     padding: 5px;
     text-decoration: none;
@@ -732,6 +724,7 @@ a.link-re:hover{
     width: 85%;
 	margin: 0 auto 18px 0;
 	text-decoration: none;
+	font-size: 1.5em;
 }
 a.a-btn-home {
 	color: #FFF;
@@ -770,7 +763,6 @@ a.a-btn-home:hover {
 
 #noticias-home h2 a {
 	color: #225273;
-	font-size: 18px;
 	text-decoration: none;
 }
 
@@ -871,13 +863,15 @@ a.a-btn-home:hover {
     display: block;
 }
 .list_carousel li {
-    font-size: 14px;
     color: #333;
     width: 270px;
     padding: 0;
     margin: 2px;
     display: block;
     float: left;
+}
+.list_carousel li p {
+	margin-top: 12px;
 }
 .list_carousel.responsive {
     width: auto;
@@ -982,8 +976,7 @@ a.a-btn-home:hover {
 
 #destaque02-texto p{
 		color: #f1f1f1;
-		font-size: 11px;
-		font-family: Verdana, Arial, Helvetica, sans-serif;
+		font-family: "Source Sans Pro",Arial,Helvetica,sans-serif;
 		margin: 10px;
 }
 
@@ -1023,8 +1016,7 @@ a.a-btn-home:hover {
 
 #destaque03-texto p{
 		color: #f1f1f1;
-		font-size: 11px;
-		font-family: Verdana, Arial, Helvetica, sans-serif;
+		font-family: "Source Sans Pro",Arial,Helvetica,sans-serif;
 		margin: 10px;
 }
 
@@ -1037,10 +1029,15 @@ a.a-btn-home:hover {
 	/*height: 108px;*/
 	overflow: hidden;
 	padding: 10px 0 0 0;
+	font-size: 1.5em;
+}
+
+#rodape p {
+	font-size: inherit;
 }
 
 #rodape a {
-		color:#FFF;	
+	color:#FFF;	
 }
 
 #rodape a:hover {
@@ -1049,11 +1046,11 @@ a.a-btn-home:hover {
 }
 
 #voce-sabia {
-		float: left;
-		background: #1b4764;
-		width: 490px;
-		height: 63px;
-		margin: 24px 0 0 30px;
+	float: left;
+	background: #1b4764;
+	width: 490px;
+	height: 63px;
+	margin: 24px 0 0 30px;
 }
 
 #voce-sabia:hover {
@@ -1075,8 +1072,7 @@ a.a-btn-home:hover {
 }
 
 #conteudo-voce-sabia {
-		font-family: verdana, "Trebuchet MS", Arial, Helvetica, sans-serif;
-		font-size: 10px;
+		font-family: "Source Sans Pro",Arial,Helvetica,sans-serif;
 		color: #f1f1f1;
 }
 
@@ -1089,8 +1085,7 @@ a.a-btn-home:hover {
 
 #rodape-botoes a {
 		font-weight: bold;
-		font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-		font-size: 12px;
+		font-family: "Source Sans Pro",Arial,Helvetica,sans-serif;
 		color: f1f1f1;
 		text-decoration: none;
 }
@@ -1165,11 +1160,11 @@ a.a-btn-home:hover {
 }
 
 #desenvolvido a {
-		font-family: Verdana, Arial, Helvetica, sans-serif;
+		font-family: "Source Sans Pro",Arial,Helvetica,sans-serif;
 		color: #a0bac2;
 }
 
-/* CSS P�GINAS INTERNAS*/
+/* CSS PAGINAS INTERNAS*/
 
 #conteudo-interno {
     background: url("images/fundo-conteudo.jpg") no-repeat scroll center top #E8EEF2;
@@ -1182,10 +1177,8 @@ a.a-btn-home:hover {
 		
 #conteudo-interno li {
 		color: #333;
-		font-family: Verdana, Arial, Helvetica, sans-serif;
-		font-size: 11px;
-		line-height: 15px;
-		margin-bottom: 6px;
+		font-family: "Source Sans Pro",Arial,Helvetica,sans-serif;
+		margin-bottom: 8px;
 }
 
 #conteudo-interno li {
@@ -1204,15 +1197,14 @@ a.a-btn-home:hover {
 
 #conteudo-interno-esquerda-texto-locais h3 {
 		color:#333;
-		font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+		font-family: "Source Sans Pro",Arial,Helvetica,sans-serif;
 		margin-left: 15px;
 		margin-bottom: 0;
 }
 
 #conteudo-interno-esquerda p{
 		color: #333;
-		font-family: Verdana, Arial, Helvetica, sans-serif;
-		font-size: 11px;
+		font-family: "Source Sans Pro",Arial,Helvetica,sans-serif;
 		line-height: 17px;
 		margin-left: 15px;
 }
@@ -1243,7 +1235,7 @@ a.a-btn-home:hover {
 #conteudo-anatomia a {
 	color: #215272;
 	line-height: 1.5em;
-	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-family: "Source Sans Pro",Arial,Helvetica,sans-serif;
 	text-decoration: none;
 }
 #conteudo-anatomia a:hover {
@@ -1253,14 +1245,13 @@ a.a-btn-home:hover {
 
 #conteudo-anatomia h2 {
 		color: #215272;
-		font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+		font-family: "Source Sans Pro",Arial,Helvetica,sans-serif;
 		letter-spacing: -1px;
 }
 
 #conteudo-anatomia p {
 		color: #333;
-		font-family: Verdana, Arial, Helvetica, sans-serif;
-		font-size: 11px;
+		font-family: "Source Sans Pro",Arial,Helvetica,sans-serif;
 		line-height: 15px;
 		margin-left: 15px;
 }
@@ -1299,16 +1290,15 @@ a.a-btn-home:hover {
 
 #conteudo-interno-esquerda-texto h3 {
 		color:#333;
-		font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+		font-family: "Source Sans Pro",Arial,Helvetica,sans-serif;
 		margin-left: 20px;
 		margin-bottom: 0;
 }
 
 #conteudo-interno-esquerda-texto h4 {
 		color:#555;
-		font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+		font-family: "Source Sans Pro",Arial,Helvetica,sans-serif;
 		margin-left: 15px;
-		font-size: 18px;
 		line-height: 18px;
 		margin-bottom: 0;
 }
@@ -1318,8 +1308,8 @@ a.a-btn-home:hover {
 /* CSS DIV OCULTA*/
 
 .conteudos {padding:0px 0 10px 0px; width:580px;}
-.bt_link{font-family: Verdana, Geneva, sans-serif;font-size: 10px;font-weight: bold; margin-left: 5px;}
-.bt_exibir{font-family: Verdana, Geneva, sans-serif;font-size: 10px;font-weight: bold; color: #00F;}
+.bt_link{font-family: "Source Sans Pro",Arial,Helvetica,sans-serif;font-weight: bold; margin-left: 5px;}
+.bt_exibir{font-family: "Source Sans Pro",Arial,Helvetica,sans-serif;font-weight: bold; color: #00F;}
 
 /* CSS TEMAS E PROCEDIMENTOS */
 .cada-post {
@@ -1350,6 +1340,11 @@ a.a-btn-home:hover {
 	width: 60%;
 }
 
+.content-cada-post a {
+	color: #114569;
+	text-decoration: none;
+}
+
 .content-cada-post p {
 	margin: 23px 18px 18px;
 }
@@ -1369,7 +1364,6 @@ a.a-btn-home:hover {
 
 #medicos h3 {
 		margin: 20px 0 10px 15px;
-		font-size: 20px;
 }
 
 #medico{
@@ -1419,8 +1413,7 @@ a.a-btn-home:hover {
 	position: absolute;
 	z-index: 3000;
 	border: 6px solid #133348;
-	font-family: Verdana, Geneva, sans-serif;
-	font-size: 12px;
+	font-family: "Source Sans Pro",Arial,Helvetica,sans-serif;
 	line-height: 20px;
 	color: #FFF;
 	background-color: #266688;
@@ -1434,8 +1427,7 @@ a.a-btn-home:hover {
 #tooltip h3, #tooltip div { margin: 0; }
 
 #tabela-parceiros h2 {
-	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
-	font-size: 18px;
+	font-family: "Source Sans Pro",Arial,Helvetica,sans-serif;
 }
 
 #tabela-parceiros a {
@@ -1526,7 +1518,6 @@ a.a-btn-home:hover {
 
 #site-title {
 	float: left;
-	font-size: 30px;
 	line-height: 36px;
 	margin: 0 0 18px 0;
 	width: 700px;
@@ -1574,6 +1565,10 @@ a.a-btn-home:hover {
     margin: 0 0 10px 15px;
     min-height: 25px;
     width: 90%;
+	font-size: 1.3em;
+}
+#breadcrumb a {
+	color: #114569;
 }
 #content input,
 #content textarea {
@@ -1588,8 +1583,6 @@ a.a-btn-home:hover {
 #content hr {
 	margin-bottom: 16px;
 	color: #333;
-	font-family: Verdana, Geneva, sans-serif;
-	font-size: 11px;
 }
 #content ul ul,
 #content ol ol,
@@ -1601,7 +1594,6 @@ a.a-btn-home:hover {
 #content kbd,
 #content tt,
 #content var {
-	font-size: 15px;
 	line-height: 21px;
 }
 #content code {
@@ -1619,11 +1611,11 @@ a.a-btn-home:hover {
 	color: #215272;
 	line-height: 1.5em;
 	margin: 0 0 20px 0;
-	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-family: "Source Sans Pro",Arial,Helvetica,sans-serif;
 }
 #conteudo-interno h1 {
     color: #215272;
-    font-family: "Trebuchet MS",Arial,Helvetica,sans-serif;
+    font-family: "Source Sans Pro",Arial,Helvetica,sans-serif;
     font-size: 3em;
     text-decoration: none;
 }
@@ -1946,14 +1938,14 @@ img.aligncenter {
 	padding: 4px;
 	text-align: left;
 	font-style: italic;
-	font-size: 8px;
+	font-size: 1.2em;
 }
 .wp-caption img {
 	margin: 5px 5px 0;
 }
 .wp-caption p.wp-caption-text {
 	color: #888;
-	font-size: 12px;
+	font-size: 1.4em;
 	margin: 5px;
 }
 .wp-smiley {
@@ -2366,7 +2358,7 @@ h3#reply-title {
 
 .menu-links h3 {
 	font-weight: bold;
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: "Source Sans Pro",Arial,Helvetica,sans-serif;
 }
 
 .menu-links ul {
@@ -2383,7 +2375,7 @@ h3#reply-title {
 
 .menu-links ul li a {
 	color: #333;
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: "Source Sans Pro",Arial,Helvetica,sans-serif;
 	text-decoration: none;
 }
 
@@ -2553,10 +2545,8 @@ code {
 		padding: 0;
 	}
 	#site-title {
-		font-size: 13pt;
 	}
 	.entry-content {
-		font-size: 14pt;
 		line-height: 1.6em;
 	}
 	.entry-title {
@@ -2651,7 +2641,6 @@ nav select {
 
 	#access .menu,
 	div.menu {
-		font-size: 10px;
 	}
 	
 	#conteudo-direito {
