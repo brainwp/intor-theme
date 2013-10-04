@@ -1338,6 +1338,7 @@ a.a-btn-home:hover {
 .content-cada-post {
 	float: left;
 	width: 60%;
+	line-height: 1.6em;
 }
 
 .content-cada-post a {
@@ -1346,7 +1347,7 @@ a.a-btn-home:hover {
 }
 
 .content-cada-post p {
-	margin: 23px 18px 18px;
+	margin: 20px 12px 18px;
 }
 
 /* CSS PAGINA MEDICOS */
