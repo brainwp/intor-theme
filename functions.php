@@ -21,8 +21,8 @@ add_action( 'wp_enqueue_scripts', 'load_caroufredsel' );
 //wp_deregister_script('jquery');
 
 if(!is_admin()) {
-	//wp_register_script( 'jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js' );
-	//wp_enqueue_script( 'jquery' );
+	wp_register_script( 'jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js' );
+	wp_enqueue_script( 'jquery' );
 }
 
 register_nav_menu( 'um', __( 'Primeiro Menu Rodape', 'twentyeleven' ) );
@@ -239,6 +239,7 @@ function thumbnail_bg ( $tamanho = 'thumbnail' ) {
     $get_post_thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), $tamanho, false, '' );
     echo 'style="background: url('.$get_post_thumbnail[0].' )"';
 }
+
 
 
 ?>

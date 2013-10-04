@@ -23,13 +23,9 @@ get_header(); ?>
         <?php echo apply_filters('the_excerpt', $cirurgia->post_excerpt); ?>
     </div><!-- #esquerda-segundo-conteudo -->
     <div id="meio-segundo-conteudo">
-        <div class="btn-home">
-			<a href="<?php home_url('temas'); ?>">Temas</a>
-        </div><!-- .btn-home -->
-        <div class="btn-home">
-        </div><!-- .btn-home -->
-        <div class="btn-home">
-        </div><!-- .btn-home -->
+		<a class="a-btn-home" href="<?php echo home_url('temas'); ?>">Temas</a>
+        <a class="a-btn-home" href="<?php echo home_url('procedimentos'); ?>">Procedimentos</a>
+        <a class="a-btn-home" href="<?php echo home_url('contato'); ?>">Contato</a>
     </div><!-- #meio-segundo-conteudo -->
     <div id="direita-segundo-conteudo">
 		<div class="titulo-direita-segundo-conteudo">
@@ -58,27 +54,12 @@ get_header(); ?>
 				</div><!-- #slider-single -->
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     </div><!-- #direita-segundo-conteudo -->
 </div><!-- #segundo-conteudo -->
 
 <div id="noticias-home">
 
-<h2><a href="<?php echo home_url('noticias'); ?>">Not&iacute;cias</a></h2>
+<h2 class="titulo-home-noticias"><a href="<?php echo home_url('noticias'); ?>">Not&iacute;cias</a></h2>
 
 <?php
 $args_loop_noticias = array(
@@ -99,8 +80,11 @@ $class_noticias = 'ultima-cada-noticia-home';
 
 	<div class="<?php echo $class_noticias; ?>">
     	<div <?php thumbnail_bg( 'noticias-home' ); ?> class="thumb-cada-noticia-home">
-        	<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
         </div><!-- .thumb-cada-noticia-home -->
+        
+        <div class="titulo-cada-noticia-home">
+        	<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+        </div><!-- .titulo-cada-noticia-home -->
     	<div class="content-cada-noticia-home">
         	<?php the_excerpt(); ?>
         </div><!-- .content-cada-noticia-home -->

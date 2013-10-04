@@ -27,7 +27,14 @@
 			<div class="cada-post">
 
 			<div class="thumb-cada-post">
-				<?php the_post_thumbnail('thumb-temas'); ?>
+            
+            <a href="<?php the_permalink(); ?>">
+			<?php if ( has_post_thumbnail() ) {
+            the_post_thumbnail( 'thumb-temas' );
+            } else { ?>
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/thumb-temas-default.jpg" alt="<?php the_title(); ?>" />
+            <?php } ?>
+            </a>
 			</div><!-- .thumb-cada-post -->
 
 			<div class="content-cada-post">

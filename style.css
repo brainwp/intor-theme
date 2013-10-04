@@ -30,7 +30,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 	vertical-align: baseline;
 }
 body {
-	line-height: 1;
+	line-height: 1.4em;
 }
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
@@ -540,6 +540,19 @@ a:hover{
 	margin-right: 2%;
 }
 
+#conteudo-direito {
+    background-color: #225273;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+    float: left;
+    margin-left: 1%;
+    max-width: 530px;
+    min-width: 430px;
+    overflow: hidden;
+    width: 57%;
+}
+
 #introducao {
 }
 
@@ -578,11 +591,12 @@ a.continue-externo:hover {
 }
 
 #introducao p, #conteudo-direito p {
-		color: #333;
-		font-family: Verdana, Arial, Helvetica, sans-serif;
-		/*font-size: 11px;
-		line-height: 15px;*/
-		margin-left: 30px;
+    color: #222;
+    font-family: 'Source Sans Pro',Arial,Helvetica,sans-serif;
+    font-size: 1.2em;
+    letter-spacing: 0.05em;
+    line-height: 1.4em;
+    margin-left: 30px;
 }
 
 #conteudo-direito img {
@@ -678,22 +692,9 @@ a.link-re:hover{
 	margin: 15px 0 0 0;
 }
 
-#conteudo-direito {
-		width: 55%;
-		margin-left: 1%;
-		max-width: 530px;
-		min-width: 300px;
-		float: left;
-		background-color: #225273;
-		min-height: 280px;
-		-webkit-border-radius: 5px;
-		-moz-border-radius: 5px;
-		border-radius: 5px;
-}
-
 #segundo-conteudo {
 	background: #cad8dc;
-	max-width: 960px;
+	width: 100%;
 	min-height: 130px;
 	margin-bottom: 30px;
 	overflow:hidden;
@@ -701,7 +702,7 @@ a.link-re:hover{
 }
 
 #esquerda-segundo-conteudo {
-	width: 45%;
+	width: 47%;
 	float: left;
 }
 
@@ -720,12 +721,25 @@ a.link-re:hover{
     width: 21%;
 }
 
+.a-btn-home {
+    background-color: #225273;
+    border-radius: 5px 5px 5px 5px;
+    clear: both;
+    display: block;
+    overflow: hidden;
+    padding: 20px 0;
+    text-align: center;
+    width: 85%;
+	margin: 0 auto 18px 0;
+	text-decoration: none;
+}
+a.a-btn-home {
+	color: #FFF;
+}
+a.a-btn-home:hover {
+	color: #cad8dc;
+}
 .btn-home {
-	background: #225273;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-	width: 90%;
 	height: 55px;
 	margin: 10px auto 10px auto;
 }
@@ -765,6 +779,7 @@ a.link-re:hover{
 	width: 32%;
 	float: left;
 	margin: 0 2% 20px 0;
+	overflow: hidden;
 }
 
 .ultima-cada-noticia-home {
@@ -781,6 +796,22 @@ a.link-re:hover{
 	background: #FFF;
 }
 
+.titulo-cada-noticia-home {
+	width: 100%;
+	background: #0e2946;
+	margin: 0;
+	padding: 15px 0;
+    height: auto;
+}
+
+.titulo-cada-noticia-home h2 {
+	margin: 0 0 0 30px;
+}
+
+.titulo-cada-noticia-home h2 a {
+	color: #fff;
+}
+
 .thumb-cada-noticia-home:hover {
   /* IE 8 */
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
@@ -794,15 +825,10 @@ a.link-re:hover{
   opacity: 0.8;
 }
 
-.thumb-cada-noticia-home h2 {
-	position: absolute;
-	bottom: 15px;
-	left: 16px;
-}
-
 .thumb-cada-noticia-home h2 a {
 	color: #408397;
 	text-decoration: none;
+	margin: 0 0 0 20px;
 }
 
 .thumb-cada-noticia-home h2 a:hover {
@@ -811,7 +837,7 @@ a.link-re:hover{
 
 .content-cada-noticia-home {
 	background: #FFF;
-	padding: 30px 30px 12px 30px;
+	padding: 25px 30px 12px 30px;
 }
 
 .list_carousel {
@@ -1280,18 +1306,35 @@ a.link-re:hover{
 /* CSS TEMAS E PROCEDIMENTOS */
 .cada-post {
 	max-width: 980px;
+	background: #f0f3f7;
+	overflow: hidden;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	margin: 0 0 20px 0;
+	border: 1px solid #f0f3f7;
+}
+
+.cada-post:hover {
+	background: #f5f8fa;
+	border: 1px solid #d9e1e8;
 }
 
 .thumb-cada-post {
+	overflow: hidden;
+	height: 200px;
 	float: left;
-	width: 30%;
+	width: 40%;
 }
 
 .content-cada-post {
 	float: left;
-	width: 70%;
+	width: 60%;
 }
 
+.content-cada-post p {
+	margin: 23px 18px 18px;
+}
 
 /* CSS PAGINA MEDICOS */
 
@@ -2292,16 +2335,16 @@ h3#reply-title {
 	padding: 18px 0;
 }
 #menus-rodape {
-	width: 55%;
+	width: 59%;
 	float: left;
 	overflow: hidden;
 	margin: 0 0 0 30px;
 }
 .menu-links {
 	float: left;
-	min-width: 200px;
-	width: 25%;
-	margin: 25px 0 30px 0;
+	min-width: 180px;
+	width: 24%;
+	margin: 25px 10px 30px 0;
 }
 
 .menu-links h3 {
@@ -2329,14 +2372,14 @@ h3#reply-title {
 
 .direita-rodape {
 	float: left;
-	width: 40%;
+	width: 36%;
 	height: auto;
 	overflow:hidden;
 }
 
 .btn-rodape {
 	width: 47%;
-	padding: 25px 0;
+	padding: 22px 0;
 	float: left;
 	margin: 20px 0 0 0;
 	background: #225273;
@@ -2355,7 +2398,7 @@ h3#reply-title {
 	-moz-border-radius: 5px;
 	border-radius: 5px;
 	text-align: center;
-	padding: 25px 0;
+	padding: 22px 0;
 }
 
 .btn-rodape a,  .btn-rodape-final a {
@@ -2564,7 +2607,7 @@ nav select {
 		float: none;
 	}
 	#conteudo-direito {
-		width: 50%;
+		max-width: 530px;
 		margin: 0 auto;
 		float: none;
 	}
@@ -2595,8 +2638,7 @@ nav select {
 	}
 	
 	#conteudo-direito {
-		min-width: 350px;
-		max-width: 480px;
+		max-width: 530px;
 		background-color: #225273;
 		min-height: 100px;
 		-webkit-border-radius: 5px;
@@ -2626,7 +2668,7 @@ nav select {
 	
 	#segundo-conteudo {
 		background: #cad8dc;
-		max-width: 960px;
+		max-width: 600px;
 		min-height: 130px;
 		margin-bottom: 30px;
 		overflow:hidden;

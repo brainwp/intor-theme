@@ -29,12 +29,6 @@
                 wp_nav_menu( array('theme_location' => 'tres', 'items_wrap'=> '<h3>'.esc_html($menu_obj->name).'</h3><ul id=\"%1$s\" class=\"%2$s\">%3$s</ul>') );
             ?>
             </div><!-- .menu-links -->
-            <div class="menu-links">
-            <?php
-                $menu_obj = echo_name_menu( 'quatro' ); 
-                wp_nav_menu( array('theme_location' => 'quatro', 'items_wrap'=> '<h3>'.esc_html($menu_obj->name).'</h3><ul id=\"%1$s\" class=\"%2$s\">%3$s</ul>') );
-            ?>
-            </div><!-- .menu-links -->
         </div><!-- #menus-rodape -->
         
         <div class="direita-rodape">
