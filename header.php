@@ -53,10 +53,6 @@
 	<div id="cabecalho">
     <a href="<?php echo home_url( '/' ); ?>" id="logo"></a>
     
-    <div id="cadastre-se">
-	<a href="<?php echo home_url( '/' ); ?>fale-conosco" id="botao-cadastre-se"></a>
-	</div>
-
 	<div class="linguas">
 <?php
   global $q_config;
