@@ -36,7 +36,7 @@
             	<a class="a-btn-rodape" href="<?php echo home_url('locais-de-atendimento'); ?>">Locais de Atendimento</a>
             </div><!-- .btn-rodape -->
             <div class="btn-rodape-final">
-	            <a class="a-btn-rodape" href="<?php echo home_url('convenios'); ?>">Conv&ecirc;nios</a>
+	            <a class="a-btn-rodape" href="<?php echo home_url('links'); ?>">Links &Uacute;teis</a>
             </div><!-- .btn-rodape-final -->
             <div class="btn-rodape">
 	            <a class="a-btn-rodape" href="<?php echo home_url('parceiros'); ?>">Parcerias</a>
