@@ -6,7 +6,7 @@ get_header(); ?>
         
 	<div id="conteudo-esquerdo">
 		<div id="introducao">
-			<?php $intro = get_page_by_title( 'Intor' ); ?>
+			<?php $intro = get_page_by_title( 'Quem Somos' ); ?>
         	<?php echo apply_filters('the_content', $intro->post_content); ?>
 		</div><!-- #introducao -->
 	</div><!-- #conteudo-esquerdo -->
@@ -25,7 +25,7 @@ get_header(); ?>
     <div id="meio-segundo-conteudo">
 		<a class="a-btn-home" href="<?php echo home_url('temas'); ?>">Temas</a>
         <a class="a-btn-home" href="<?php echo home_url('procedimentos'); ?>">Procedimentos</a>
-        <a class="a-btn-home" href="<?php echo home_url('contato'); ?>">Contato</a>
+        <a class="a-btn-home" href="<?php echo home_url('anatomia'); ?>">Anatomia</a>
     </div><!-- #meio-segundo-conteudo -->
     <div id="direita-segundo-conteudo">
 		<div class="titulo-direita-segundo-conteudo">
