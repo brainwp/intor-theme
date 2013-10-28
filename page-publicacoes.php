@@ -1,7 +1,5 @@
 <?php /* Template name: Publica&ccedil;&otilde;es */ get_header(); ?>
 				
-
-<div id="conteudo-interno"><!--Início Conteúdo Interno -->
     	<div id="conteudo-interno-esquerda">
 		<div id="conteudo-interno-esquerda-texto">
         
@@ -24,14 +22,12 @@ setup_postdata($post);
         No Results
 		<?php endif; ?>
         
-        
 
 		</div><!-- #post -->
        
         </div><!-- #conteudo-interno-esquerda-texto -->
         </div><!-- #conteudo-interno-esquerda -->
 
-</div><!--#conteudo-interno-->
 
 <?php get_sidebar( interna ); ?>
 <?php get_footer(); ?>

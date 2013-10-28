@@ -1,7 +1,5 @@
 <?php /* Template name: D&uacute;vidas Frequentes */ get_header(); ?>
 				
-
-<div id="conteudo-interno"><!--Início Conteúdo Interno -->
     	<div id="conteudo-interno-esquerda">
 		<div id="conteudo-interno-esquerda-texto">
 
@@ -35,7 +33,6 @@
         </div><!-- #conteudo-interno-esquerda-texto -->
         </div><!-- #conteudo-interno-esquerda -->
 
-</div><!--#conteudo-interno-->
 
 <?php get_sidebar( interna ); ?>
 <?php get_footer(); ?>
