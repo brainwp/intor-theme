@@ -14,13 +14,12 @@
 
 get_header(); ?>
 
-<div id="conteudo-interno"><!--Início Conteúdo Interno -->
 <div id="conteudo-interno-esquerda">
 
 			<?php if ( have_posts() ) : ?>
 
 				<header class="page-header">
-					<h1 class="page-title">
+					<h1>
 						<?php if ( is_day() ) : ?>
 							<?php printf( __( 'Daily Archives: %s', 'twentyeleven' ), '<span>' . get_the_date() . '</span>' ); ?>
 						<?php elseif ( is_month() ) : ?>
@@ -71,7 +70,6 @@ get_header(); ?>
 			<?php endif; ?>
 
 </div><!-- #conteudo-interno-esquerda -->
-</div><!--#conteudo-interno-->
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
