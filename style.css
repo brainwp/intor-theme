@@ -760,6 +760,16 @@ a.a-btn-home:hover {
 	text-decoration: none;
 }
 
+#noticias-home h2 span {
+    color: #CCCCCC;
+    font-size: 0.75em;
+    padding: 0 0 0 10px;
+}
+
+#noticias-home h2 span:hover {
+	color: #114569;
+}
+
 .cada-noticia-home {
 	min-width: 300px;
 	width: 32%;
@@ -2256,6 +2266,7 @@ h3#reply-title {
 }
 .widget-title {
 	color: #222;
+	padding: 20px 0;
 }
 .widget-area a:link,
 .widget-area a:visited {

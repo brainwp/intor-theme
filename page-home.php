@@ -58,7 +58,7 @@ get_header(); ?>
 
 <div id="noticias-home">
 
-<h2 class="titulo-home-noticias"><a href="<?php echo home_url('noticias'); ?>">Not&iacute;cias</a></h2>
+<h2 class="titulo-home-noticias"><a href="<?php echo home_url('noticias'); ?>">Not&iacute;cias <span>Ver todas>></span></a></h2>
 
 <?php
 $args_loop_noticias = array(
