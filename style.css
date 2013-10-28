@@ -221,7 +221,7 @@ body,
 input,
 textarea {
 	color: #666;
-	line-height: 1.8em;
+	line-height: 2em;
 }
 hr {
 	background-color: #e7e7e7;
@@ -328,14 +328,15 @@ textarea {
 	padding: 2px;
 }
 a:link {
-	color: #0066cc;
+	color: #666;
+	text-decoration: none;
 }
 a:visited {
-	color: #743399;
+	color: #666;
 }
 a:active,
 a:hover {
-	color: #ff4b33;
+	color: #114569;
 }
 
 /* Text meant only for screen readers */
@@ -365,14 +366,6 @@ h1 {
 h2 {
 		letter-spacing: -1px;
 		margin: 15px 0px 10px 15px;
-}
-
-a {
-		color: #215272;
-}
-
-a:hover{
-		color: #666;
 }
 
 #geral .texto-destaque{
@@ -1206,7 +1199,6 @@ a.a-btn-home:hover {
 #conteudo-interno-esquerda p{
 		color: #333;
 		font-family: "Source Sans Pro",Arial,Helvetica,sans-serif;
-		line-height: 17px;
 		margin-left: 15px;
 }
 
