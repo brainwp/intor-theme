@@ -6,7 +6,7 @@ get_header(); ?>
         
 	<div id="conteudo-esquerdo">
 		<div id="introducao">
-			<?php $intro = get_page_by_title( 'Quem Somos' ); ?>
+			<?php $intro = get_page_by_title( 'Intro Site' ); ?>
         	<?php echo apply_filters('the_content', $intro->post_content); ?>
 		</div><!-- #introducao -->
 	</div><!-- #conteudo-esquerdo -->

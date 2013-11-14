@@ -74,8 +74,8 @@ function excerpt($limit) {
       return nl2br($excerpt);
     }
 
-add_image_size( 'thumb-reblogando', 80, 60, true );
-add_image_size( 'thumb-medicos', 150, 150, true );
+add_image_size( 'thumb-reblogando', 80, 60 );
+add_image_size( 'thumb-medicos', 150, 150 );
 add_image_size( 'noticias-home', 310, 120, true );
 
 /** Adiciona metabox Link **/
