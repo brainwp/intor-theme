@@ -1392,6 +1392,7 @@ a.a-btn-home:hover {
 	margin: 25px 0 10px 10px;
 	border:4px solid white;
 	outline: 1px solid #CCCCCC;
+	overflow: hidden;
 }
 
 #fabiano .foto{
