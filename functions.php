@@ -74,9 +74,9 @@ function excerpt($limit) {
       return nl2br($excerpt);
     }
 
-add_image_size( 'thumb-reblogando', 80, 60 );
-add_image_size( 'thumb-medicos', 150, 150 );
-add_image_size( 'noticias-home', 310, 120, true );
+add_image_size( 'thumb-temas', 240, 9999 );
+add_image_size( 'thumb-medicos', 150, 9999 );
+add_image_size( 'noticias-home', 310, 9999 ); 
 
 /** Adiciona metabox Link **/
 $prefix = 'br_';
