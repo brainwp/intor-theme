@@ -233,7 +233,7 @@ hr {
 
 /* Text elements */
 p {
-	font-size: 1.35em;
+	font-size: 1.5em;
 	margin-bottom: 15px;
 }
 ul {
