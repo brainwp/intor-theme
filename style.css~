@@ -233,7 +233,7 @@ hr {
 
 /* Text elements */
 p {
-	font-size: 1.5em;
+	font-size: 1.35em;
 	margin-bottom: 15px;
 }
 ul {
@@ -2673,7 +2673,7 @@ nav select {
 	#meio-segundo-conteudo {
 		float: none;
 		margin: 15px 0 0;
-		width: 30%;
+		width: 100%;
 	}
 
 	#direita-segundo-conteudo {

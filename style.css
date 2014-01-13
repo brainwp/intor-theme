@@ -2666,14 +2666,14 @@ nav select {
 	}
 
 	#esquerda-segundo-conteudo {
-		width: 70%;
+		width: 100%;
 		float: none;
 	}
 
 	#meio-segundo-conteudo {
 		float: none;
-		margin: 15px 0 0;
-		width: 30%;
+		margin: 15px;
+		width: 100%;
 	}
 
 	#direita-segundo-conteudo {
