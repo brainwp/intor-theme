@@ -11,7 +11,9 @@ get_header(); ?>
 		</div><!-- #introducao -->
 	</div><!-- #conteudo-esquerdo -->
     <div id="conteudo-direito">
+		<a href="<?php echo home_url('parar-de-fumar'); ?>">
 		<img src="<?php bloginfo('stylesheet_directory'); ?>/images/banner-campanha-anti-tabaco.gif" />
+		</a>
     </div><!-- #conteudo-direito -->
     
 </div><!-- #conteudo -->
