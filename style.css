@@ -2620,17 +2620,24 @@ nav select {
 }
 
 @media all and (max-width:800px) {
+		
 		nav ul     { display: none; }
-		nav select { display: inline-block; }
-	#conteudo-esquerdo {
+		
+		nav select { 
+			display: inline-block;
+			margin: 13px 60px;				
+		}
+		
+		#conteudo-esquerdo {
 		width: 100%;
 		float: none;
-	}
-	#conteudo-direito {
+		}
+		
+		#conteudo-direito {
 		max-width: 530px;
 		margin: 0 auto;
 		float: none;
-	}
+		}
 }
 
 @media all and (max-width:600px) {
@@ -2655,6 +2662,10 @@ nav select {
 	#access .menu,
 	div.menu {
 	}
+
+	.a-btn-home {
+	width: 100%;
+	}
 	
 	#conteudo-direito {
 		max-width: 530px;
@@ -2672,9 +2683,15 @@ nav select {
 
 	#meio-segundo-conteudo {
 		float: none;
-		margin: 15px;
-		width: 100%;
+		margin: 20px;
+		width: auto;
 	}
+
+
+	#introducao p, #conteudo-direito p {
+		margin-right: 30px;
+	}
+
 
 	#direita-segundo-conteudo {
 		background: #abc2c9;
@@ -2708,6 +2725,18 @@ nav select {
 		min-width: 300px;
 		max-width: 350px;
 	}
+
+	#meio-segundo-conteudo {
+    float: none;
+    margin: 20px;
+    width: auto;
+	}
+
+
+	.menu-links {
+		margin: 0 10px 0 0;
+	}
+
 }
 
 @media all and (max-width:360px) {
