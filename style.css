@@ -1,10 +1,9 @@
 ﻿/*
-Theme Name: Intor Theme 2
-Template: twentyeleven
+Theme Name: Intor Theme 2014
 Theme URI: http://brasa.art.br/
 Description: Tema desenvolvido para o grupo de m&eacute;dicos INTOR em 2013.
 Author: Brasa Team
-Version: 0.1
+Version: 0.7
 License: GNU General Public License
 License URI: license.txt
 Tags: Cirurgia Tor&aacute;cica, Cirurgia do T&oacute;rax, Intor, Instituto do T&oacute;rax, Cirurgia, T&oacute;rax, Tor&aacute;cica, N&oacute;dulo, Dr. Davi Wen Wei Kang, Dr. Fabiano Cataldi Engel, Dr. Jos&eacute; Ribas Milanez de Campos, Dr. Laert de Oliveira Andrade Filho, Simpatectomia, Hiperidrose, C&acirc;ncer de Pulm&atilde;o, Pneumot&oacute;rax
@@ -2742,6 +2741,25 @@ nav select {
 	.ultima-cada-noticia-home {
 		display: none;
 	}
+
+	
+	#conteudo-interno-direita {
+	display: none;
+	}
+
+	#conteudo-interno-esquerda {
+		float: left;
+		padding: 30px;
+		width: auto;
+	}
+
+	
+	
+	img.size-auto, img.size-full, img.size-large, img.size-medium, .attachment img {
+	width: 100%;
+	max-width: none !important;
+	} 
+
 
 }
 
