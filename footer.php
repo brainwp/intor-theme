@@ -44,16 +44,16 @@
             <div class="btn-rodape-final">
 	            <a class="a-btn-rodape" href="<?php echo home_url('contato'); ?>">Contato</a>
             </div><!-- .btn-rodape-final -->
-            
-            <div class="hack"></div>
+
+        <div class="hack"></div>                   
+
+		</div><!-- .direita-rodape -->   
 
         <div class="redes">
         	<p>Siga: </p>
             	<a class="a-facebook" href=""></a> <a class="a-twitter" href=""></a>
 		</div><!-- .redes -->
-    
-		</div><!-- .direita-rodape -->
-        
+
         <div class="hack"></div>
         
         <div class="bottom-rodape">

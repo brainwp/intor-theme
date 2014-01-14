@@ -1,8 +1,9 @@
 ﻿/*
 Theme Name: Intor Theme 2014
-Theme URI: http://brasa.art.br/
-Description: Tema desenvolvido para o grupo de m&eacute;dicos INTOR em 2013.
-Author: Brasa Team
+Theme URI: http://cirurgiatoracica.med.br/
+Description: Novo Tema desenvolvido para o grupo de m&eacute;dicos INTOR em 2014.
+Author: Brasa.art.br
+Author URI: http://brasa.art.br/
 Version: 0.7
 License: GNU General Public License
 License URI: license.txt
@@ -522,7 +523,7 @@ h2 {
 	max-width: 980px;		
 	padding-top: 30px;
 	overflow: hidden;
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 }
 
 #conteudo-esquerdo {
@@ -540,10 +541,8 @@ h2 {
 	border-radius: 5px;
     float: left;
     margin-left: 1%;
-    max-width: 530px;
-    min-width: 430px;
     overflow: hidden;
-    width: 57%;
+    width: 55%;
 }
 
 .equipe-home {
@@ -680,13 +679,13 @@ a.link-re:hover{
 	background: #cad8dc;
 	width: 100%;
 	min-height: 130px;
-	margin-bottom: 30px;
+	margin-bottom: 10px;
 	overflow:hidden;
 	position: relative;
 }
 
 #esquerda-segundo-conteudo {
-	width: 47%;
+	width: 45%;
 	float: left;
 }
 
@@ -702,7 +701,7 @@ a.link-re:hover{
 #meio-segundo-conteudo {
     float: left;
     margin: 15px 0 0;
-    width: 21%;
+    width: 20%;
 }
 
 .a-btn-home {
@@ -734,12 +733,11 @@ a.a-btn-home:hover {
     float: left;
     height: 100%;
     min-height: 250px;
-    width: 32%;
+    width: 35%;
 }
 
 .titulo-direita-segundo-conteudo {
 	background-color: #408397;
-	width: 100%;
 	height: 65px;
 	overflow: hidden;
 }
@@ -751,7 +749,7 @@ a.a-btn-home:hover {
 
 #noticias-home {
 	overflow: hidden;
-	margin: 0 0 30px 0;
+	margin: 0 0 10px 0;
 }
 
 #noticias-home h2 a {
@@ -770,7 +768,6 @@ a.a-btn-home:hover {
 }
 
 .cada-noticia-home {
-	min-width: 300px;
 	width: 32%;
 	float: left;
 	margin: 0 2% 20px 0;
@@ -778,7 +775,6 @@ a.a-btn-home:hover {
 }
 
 .ultima-cada-noticia-home {
-	min-width: 300px;
 	width: 32%;
 	float: left;
 	margin: 0 0 0 0;
@@ -858,7 +854,7 @@ a.a-btn-home:hover {
     height: 160px;
     margin: 20 auto 0 auto;
     overflow: hidden;
-    width: 315px;
+    width: auto;
 }
 .list_carousel ul {
     margin: 0;
@@ -868,7 +864,7 @@ a.a-btn-home:hover {
 }
 .list_carousel li {
     color: #333;
-    width: 270px;
+    width: 260px;
     padding: 0;
     margin: 2px;
     display: block;
@@ -1198,7 +1194,7 @@ a.a-btn-home:hover {
 	}
 
 #conteudo-interno-esquerda {
-		width: 611px;
+		width:63%;
 		padding: 30px 15px 25px 15px;
 		float: left;
 }
@@ -1221,8 +1217,8 @@ a.a-btn-home:hover {
 }
 
 #conteudo-interno-direita {
-		background: url(images/fundo-internas-direita.jpg) right no-repeat;
-		width: 336px;
+		background:url("images/fundo-internas-direita.jpg") no-repeat scroll left center rgba(0, 0, 0, 0);
+		width: 33%;
 		height: 348px;
 		float: right;
 		margin-top: 0;
@@ -2356,15 +2352,15 @@ h3#reply-title {
 	padding: 18px 0;
 }
 #menus-rodape {
-	width: 59%;
+	width: 58%;
 	float: left;
 	overflow: hidden;
 	margin: 0 0 0 30px;
 }
 .menu-links {
 	float: left;
-	min-width: 180px;
-	width: 24%;
+	min-width: 160px;
+	width:19%;
 	margin: 25px 10px 30px 0;
 }
 
@@ -2399,7 +2395,7 @@ h3#reply-title {
 }
 
 .btn-rodape {
-	width: 47%;
+	width: 46%;
 	padding: 22px 0;
 	float: left;
 	margin: 20px 0 0 0;
@@ -2411,7 +2407,7 @@ h3#reply-title {
 }
 
 .btn-rodape-final {
-	width: 47%;
+	width: 46%;
 	float: left;
 	margin: 20px 0 0 20px;
 	background: #225273;
@@ -2435,13 +2431,13 @@ h3#reply-title {
 }
 
 .redes {
-	background: url(images/redes-intor.jpg) 35px 0 no-repeat;
-	width: 210px;
-	height: 20px;
-	overflow: hidden;
-	clear: both;
-	margin: 20px 0;
-	position: relative;
+    background: url("images/redes-intor.jpg") no-repeat scroll 35px 0 rgba(0, 0, 0, 0);
+    clear: both;
+    float: right;
+    height: 25px;
+    margin: -25px 30px 20px;
+    overflow: hidden;
+    width: 210px;
 }
 
 .redes p {
@@ -2624,14 +2620,52 @@ nav select {
 /* =Responsive CSS
 -------------------------------------------------------------- */
 
+@media all and (max-width:900px) {
 
-@media all and (max-width:800px) {
+
+	#menus-rodape {
+		float: left;
+		margin: 0 0 20px 35px;
+		overflow: hidden;
+		width: 40%;
+	}
+
+	.menu-links {
+		margin: 0 10px 0 0;
+	}
+
+	.direita-rodape {
+		float: none;
+		width: 50%;
+		height: auto;
+		overflow:hidden;
+		margin: 0 auto 45px;
+	}
+
+	.btn-rodape-final {
+
+		margin: 20px 0 0;
+		width: 100%;
+
+	}
+
+	.btn-rodape {
+		margin: 20px 0 0;
+		width: 100%;
+	}
+
+
+
+}
+
+
+@media all and (max-width:780px) {
 		
 		nav ul     { display: none; }
 		
 		nav select { 
 		display: inline-block;
-		margin: 13px 60px;	
+		margin: 12px 48px;	
 		background:no-repeat scroll right center #4F9CAA;
 		border: medium none;
 		border-radius: 5px;
@@ -2668,29 +2702,29 @@ nav select {
 	}
 	
 	#conteudo-direito {
-		max-width: 530px;
+		width: 90%;
 		background-color: #225273;
 		min-height: 100px;
 		-webkit-border-radius: 5px;
 		-moz-border-radius: 5px;
 		border-radius: 5px;
-		margin: 0 30px;
+		margin: 0 20px;
 	}
-
-	#esquerda-segundo-conteudo {
-		width: 100%;
-		float: none;
-	}
-
-	#meio-segundo-conteudo {
-		float: none;
-		margin: 20px;
-		width: auto;
-	}
-
 
 	#introducao p, #conteudo-direito p {
 		margin-right: 30px;
+	}
+
+
+	#esquerda-segundo-conteudo {
+		width: 50%;
+		float: left;
+	}
+
+	#meio-segundo-conteudo {
+		float: left;
+		margin: 20px;
+		width: 43%;
 	}
 
 
@@ -2698,7 +2732,7 @@ nav select {
 		background: #abc2c9;
 		width: 100%;
 		position: none;
-		float: none;
+		float: left;
 		right: 0;
 		height: 100%;
 	}
@@ -2712,29 +2746,10 @@ nav select {
 		position: relative;
 	}
 
-	.direita-rodape {
-		float: none;
-		width: 90%;
-		min-width: 380px;
-		height: auto;
-		overflow:hidden;
-		margin: 0 auto;
-	}
-
-	#meio-segundo-conteudo {
-    float: none;
-    margin: 20px;
-    width: auto;
-	}
-
-
-	.menu-links {
-		margin: 0 10px 0 0;
-	}
 
 	.cada-noticia-home {
 		float: left;
-		margin: 0 0 20px 30px;
+		margin: 0 0 20px 20px;
 		width: 45%;
 	}
 
@@ -2752,32 +2767,71 @@ nav select {
 		padding: 30px;
 		width: auto;
 	}
-
-	
 	
 	img.size-auto, img.size-full, img.size-large, img.size-medium, .attachment img {
 	width: 100%;
 	max-width: none !important;
-	} 
+	}
 
+	.linguas {
+		display: none;
+	}
 
 }
 
 
-@media all and (max-width:650px) {
+@media all and (max-width:640px) {
 
 
 	.cada-noticia-home {
-		width: 86%;
+		width: 88%;
 		margin: 0 30px 20px 30px;
+	}
+
+		#esquerda-segundo-conteudo {
+		width: 100%;
+		float: none;
+	}
+
+	#meio-segundo-conteudo {
+		float: none;
+		margin: 20px;
+		width: 90%;
+	}
+
+
+	#direita-segundo-conteudo {
+		background: #abc2c9;
+		width: 100%;
+		position: none;
+		float: none;
+		right: 0;
+		height: 100%;
+	}
+
+
+	.btn-rodape-final {
+		margin: 20px 0 0;
+		width: 90%;
+	}
+
+
+	.btn-rodape {
+		margin: 20px 0 0;
+		width: 90%;
+	}
+
+	.menu-links {
+		font-size: 0.88em;
+		min-width: 130px;
 	}
 
 }
 
 @media all and (max-width:360px) {
 
-	.linguas {
-		display: none;
-	}
+
+
+
 
 }

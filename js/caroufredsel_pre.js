@@ -1,7 +1,7 @@
 // JavaScript Document
 
 jQuery(function() {
-    jQuery('#foo2').carouFredSel({
+    jQuery('ul#foo2').carouFredSel({
         auto: {
 			//delay: 10000,
 			timeoutDuration: 10000,
@@ -10,7 +10,7 @@ jQuery(function() {
         infinite: true,
         responsive: true,
         direction: "up",
-        width: 270,
+        width: 260,
         height: 175,
         items: {
             visible: 1,
