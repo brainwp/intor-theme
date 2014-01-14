@@ -2509,26 +2509,6 @@ img#wpstats {
 }
 
 
-/* =Mobile Safari ( iPad, iPhone and iPod Touch )
--------------------------------------------------------------- */
-
-pre {
-	-webkit-text-size-adjust: 140%;
-}
-code {
-	-webkit-text-size-adjust: 160%;
-}
-#access,
-.entry-meta,
-.entry-utility,
-.navigation,
-.widget-area {
-	-webkit-text-size-adjust: 120%;
-}
-#site-description {
-	-webkit-text-size-adjust: none;
-}
-
 
 /* =Print Style
 -------------------------------------------------------------- */
@@ -2615,40 +2595,65 @@ code {
 	}
 }
 
+
+/* =Mobile Safari ( iPad, iPhone and iPod Touch )
+-------------------------------------------------------------- */
+
+pre {
+	-webkit-text-size-adjust: 140%;
+}
+code {
+	-webkit-text-size-adjust: 160%;
+}
+#access,
+.entry-meta,
+.entry-utility,
+.navigation,
+.widget-area {
+	-webkit-text-size-adjust: 120%;
+}
+#site-description {
+	-webkit-text-size-adjust: none;
+}
+
 nav select {
   display: none;
 }
+
+
+
+/* =Responsive CSS
+-------------------------------------------------------------- */
+
 
 @media all and (max-width:800px) {
 		
 		nav ul     { display: none; }
 		
 		nav select { 
-			display: inline-block;
-			margin: 13px 60px;				
+		display: inline-block;
+		margin: 13px 60px;	
+		background:no-repeat scroll right center #4F9CAA;
+		border: medium none;
+		border-radius: 5px;
+		color: #FFFFFF;
+		text-transform: uppercase;
+		padding: 5px 10px;		
 		}
 		
 		#conteudo-esquerdo {
 		width: 100%;
 		float: none;
 		}
-		
-		#conteudo-direito {
-		max-width: 530px;
-		margin: 0 auto;
-		float: none;
-		}
-}
 
-@media all and (max-width:600px) {
-	#logo {
-		background: url(images/fundo-logo.gif) no-repeat center ;
-		width: 226px;
-		height: 102px;
-		margin: 29px auto 0 auto;
-		float: none;
-		display: block;
-	}
+		#logo {
+			background: url(images/fundo-logo.gif) no-repeat center ;
+			width: 226px;
+			height: 102px;
+			margin: 29px auto 0 auto;
+			float: none;
+			display: block;
+		}
 
 	#cadastre-se {
 		width: 101px;
@@ -2657,10 +2662,6 @@ nav select {
 		float: none;
 		margin: 0 auto;
 		display: none;
-	}
-
-	#access .menu,
-	div.menu {
 	}
 
 	.a-btn-home {
@@ -2674,6 +2675,7 @@ nav select {
 		-webkit-border-radius: 5px;
 		-moz-border-radius: 5px;
 		border-radius: 5px;
+		margin: 0 30px;
 	}
 
 	#esquerda-segundo-conteudo {
@@ -2739,7 +2741,7 @@ nav select {
 
 }
 
-@media all and (max-width:360px) {
+@media all and (max-width:460px) {
 	#esquerda-segundo-conteudo {
 		width: 100%;
 		float: none;
