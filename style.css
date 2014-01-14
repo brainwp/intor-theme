@@ -516,6 +516,8 @@ h2 {
 	color: #ccc;
 }
 
+
+
 /* =CONTEUDO
 -------------------------------------------------------------- */
 #conteudo {
@@ -528,7 +530,6 @@ h2 {
 
 #conteudo-esquerdo {
 	width: 40%;
-	min-width: 300px;
 	float: left;
 	padding-bottom: 10px;
 	margin-right: 2%;
@@ -571,7 +572,7 @@ a.continue-externo:hover {
 	color: #666666;
 	text-decoration: none;
 }
-
+min-width: 260px;
 .mais-excerpt {
 	margin: 10px 0 0 0;
 	display: block;
@@ -2783,6 +2784,11 @@ nav select {
 @media all and (max-width:640px) {
 
 
+	nav select {
+		margin: 12px 10px;
+		max-width: 240px;
+		}
+
 	.cada-noticia-home {
 		width: 88%;
 		margin: 0 30px 20px 30px;
@@ -2826,12 +2832,71 @@ nav select {
 		min-width: 130px;
 	}
 
+
+	#medicos {
+		width: 97%;
+	}
+
+	#medicos h3 {
+		margin: 15px 0 10px 10px;
+	}
+	
+	#medicos .foto {
+		float: none;
+		margin: 20px auto 0;
+	}
+
+	#medicos .conteudo {
+		float: left;
+		margin: 0 15px;
+		width: auto;
+	}
+
 }
 
 @media all and (max-width:360px) {
 
+	.direita-rodape {
+		float: left;
+		width: 90%;
+		margin: 0 0 45px 30px;
+	}
+
+	
+	.redes {
+		background: url("images/redes-intor.jpg") no-repeat scroll 35px 0 rgba(0, 0, 0, 0);
+		clear: both;
+		float: left;
+	}
 
 
+	.cada-noticia-home {
+		width: 84%;
+		margin: 0 20px 20px;
+	}
+
+
+	.thumb-cada-post {
+		width: 100%;
+	}
+
+	.thumb-cada-post a img {
+		width: 100%;
+	}
+
+	.content-cada-post {
+		width: 98%;
+	}
+
+
+	#breadcrumb {
+    margin: 0 0 10px 0;
+	}
+	
+
+	h1 {
+		margin: 0 0 20px 0;
+	}
 
 
 }
