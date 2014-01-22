@@ -1024,7 +1024,7 @@ a.a-btn-home:hover {
 
 #rodape p {
 	font-size: 0.9em;
-	display: block !important;
+	display: block;
 }
 
 #rodape a {
@@ -2458,10 +2458,6 @@ h3#reply-title {
 	float: left;
 }
 
-#rodape p {
-	display: none;
-}
-
 #site-info {
 	font-weight: bold;
 }
@@ -2863,6 +2859,11 @@ nav select {
 	h1 {
 		margin: 0 0 20px 0;
 	}
+
+	#rodape p {
+		display: none;
+	}
+
 
 
 }
