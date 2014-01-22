@@ -2457,6 +2457,10 @@ h3#reply-title {
 	float: left;
 }
 
+#rodape p {
+	display: none;
+}
+
 #site-info {
 	font-weight: bold;
 }
