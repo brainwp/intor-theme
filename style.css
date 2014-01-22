@@ -1024,6 +1024,7 @@ a.a-btn-home:hover {
 
 #rodape p {
 	font-size: 0.9em;
+	display: block !important;
 }
 
 #rodape a {
