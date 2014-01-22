@@ -735,7 +735,7 @@ a.a-btn-home:hover {
 
 #noticias-home {
 	overflow: hidden;
-	margin: 0 0 10px 0;
+	margin: 0;
 }
 
 #noticias-home h2 a {
@@ -906,17 +906,15 @@ a.a-btn-home:hover {
 
 
 .cada-noticia-archive {
-	/*min-width: 300px;*/
 	width: 48%;
 	float: left;
-	margin: 0 2% 0 0;
+	margin: 0 2% 2% 0;
 }
 
 .ultima-cada-noticia-archive {
-	/*min-width: 300px;*/
 	width: 48%;
 	float: left;
-	margin: 0 0 0 0;
+	margin: 0 0 2%;
 }
 
 .content-cada-noticia-archive {
@@ -1025,7 +1023,7 @@ a.a-btn-home:hover {
 }
 
 #rodape p {
-	font-size: inherit;
+	font-size: 0.9em;
 }
 
 #rodape a {
@@ -1209,9 +1207,9 @@ a.a-btn-home:hover {
 }
 
 #conteudo-interno-direita-sidebar {		
-		width: 336px;
+		width: 33%;
 		height: 348px;
-		float: right;
+		float: left;
 		margin-top: 0;
 }
 

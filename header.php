@@ -4,12 +4,21 @@
  * Displays all of the <head> section and everything up till <div id="main">
  */
 ?><!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" <?php language_attributes(); ?>>
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" <?php language_attributes(); ?>>
+<![endif]-->
+<!--[if !(IE 7) | !(IE 8)  ]><!-->
 <html <?php language_attributes(); ?>>
+<!--<![endif]-->
 <head>
-<meta charset="<?php bloginfo( 'charset' ); ?>" />
+	<meta charset="<?php bloginfo( 'charset' ); ?>">
+	<meta name="viewport" content="width=device-width">
 <title><?php
 	/*
-	 * Imprimi o tag <title> baseado no que est� sendo visto.
+	 * Imprimi o tag <title> baseado no que esta sendo visto.
 	 */
 	global $page, $paged;
 
@@ -18,12 +27,12 @@
 	// Adiciona o nome do Blog/Site.
 	bloginfo( 'name' );
 
-	// Adiciona a descri��o do Blog/Site na Home/FrontPage.
+	// Adiciona a descricao do Blog/Site na Home/FrontPage.
 	$site_description = get_bloginfo( 'description', 'display' );
 	if ( $site_description && ( is_home() || is_front_page() ) )
 		echo " | $site_description";
 
-	// Adiciona o n�mero da p�gina, se necess�rio.
+	// Adiciona o numero da pagina, se necess�rio.
 	if ( $paged >= 2 || $page >= 2 )
 		echo ' | ' . sprintf( __( 'Page %s', 'twentyten' ), max( $paged, $page ) );
 
@@ -82,4 +91,4 @@
 				<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 			</nav><!-- #access -->
 
-	<div id="geral"><!--In�cio #geral -->
+	<div id="geral"><!--Inicio #geral -->

@@ -8,7 +8,7 @@
 ?>
 	</div><!-- #main -->
 
-	<div id="rodape"><!--Início Rodapé -->
+	<div id="rodape"><!--Inicio Rodape -->
     
         <div id="menus-rodape">
             <div class="menu-links">
@@ -72,7 +72,7 @@
         </div><!-- .bottom-rodape -->
       
 	
-    </div><!--Final Rodapé -->
+    </div><!--Final Rodape -->
 
 </div><!-- #wrapper -->
 
