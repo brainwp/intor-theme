@@ -5,9 +5,7 @@ Description: Novo Tema desenvolvido para o grupo de m&eacute;dicos INTOR em 2014
 Author: Brasa.art.br
 Author URI: http://brasa.art.br/
 Version: 0.7
-License: GNU General Public License
-License URI: license.txt
-Tags: Cirurgia Tor&aacute;cica, Cirurgia do T&oacute;rax, Intor, Instituto do T&oacute;rax, Cirurgia, T&oacute;rax, Tor&aacute;cica, N&oacute;dulo, Dr. Davi Wen Wei Kang, Dr. Fabiano Cataldi Engel, Dr. Jos&eacute; Ribas Milanez de Campos, Dr. Laert de Oliveira Andrade Filho, Simpatectomia, Hiperidrose, C&acirc;ncer de Pulm&atilde;o, Pneumot&oacute;rax
+License: GNU General Public License v2
 */
 
 
@@ -183,12 +181,13 @@ h6 {
 #main,
 #wrapper {
 	margin: 0 auto;
-	max-width: 980px;
 	background: #E9EEF2;
 	padding: 0;
-	width: auto;
 }
-}
+
+#wrapper {
+	max-width: 980px;
+} 
 
 /* Structure the footer area */
 #footer-widget-area {
@@ -379,7 +378,6 @@ h2 {
 }
 
 #geral {
-	max-width: 980px;
 	background: #e9eef2;
 	margin: 0 auto;
 	overflow: hidden;
@@ -420,7 +418,6 @@ h2 {
 /*CABE�ALHO*/
 #cabecalho {
 	background: url(images/fundo-cabecalho.jpg) ;
-	max-width: 980px;
 	height: 154px;
 	margin: 0 auto;
 	overflow: hidden;
@@ -445,7 +442,6 @@ h2 {
 #access {
 	background: #114569;
 	height: 50px;
-	max-width: 980px;
 	z-index: 1000;
 	font-size: 1.5em;
 }
@@ -521,8 +517,7 @@ h2 {
 /* =CONTEUDO
 -------------------------------------------------------------- */
 #conteudo {
-	background: url(images/fundo-conteudo.jpg) no-repeat top #e8eef2;
-	max-width: 980px;		
+	background: url(images/fundo-conteudo.jpg) no-repeat top #e8eef2;	
 	padding-top: 30px;
 	overflow: hidden;
 	margin-bottom: 20px;
@@ -1034,8 +1029,6 @@ a.a-btn-home:hover {
 #rodape {
 	background-color: #11456a;
 	color: #FFF;
-	max-width: 980px;
-	/*height: 108px;*/
 	overflow: hidden;
 	padding: 10px 0 0 0;
 	font-size: 1.5em;
@@ -2393,6 +2386,7 @@ h3#reply-title {
 	width: 36%;
 	height: auto;
 	overflow:hidden;
+ 	margin-bottom: 45px;
 }
 
 .btn-rodape {
@@ -2475,8 +2469,6 @@ h3#reply-title {
 	float: left;
 }
 
-
-
 #site-info {
 	font-weight: bold;
 }
@@ -2496,13 +2488,20 @@ h3#reply-title {
 	padding-left: 20px;
 	text-decoration: none;
 }
+
 #site-generator a:hover {
 	text-decoration: underline;
 }
+
 img#wpstats {
 	display: none;
 	margin: 0 auto 10px;
 }
+
+nav select {
+  display: none;
+}
+
 
 
 
@@ -2592,32 +2591,6 @@ img#wpstats {
 }
 
 
-/* =Mobile Safari ( iPad, iPhone and iPod Touch )
--------------------------------------------------------------- */
-
-pre {
-	-webkit-text-size-adjust: 140%;
-}
-code {
-	-webkit-text-size-adjust: 160%;
-}
-#access,
-.entry-meta,
-.entry-utility,
-.navigation,
-.widget-area {
-	-webkit-text-size-adjust: 120%;
-}
-#site-description {
-	-webkit-text-size-adjust: none;
-}
-
-nav select {
-  display: none;
-}
-
-
-
 /* =Responsive CSS
 -------------------------------------------------------------- */
 
@@ -2626,7 +2599,7 @@ nav select {
 
 	#menus-rodape {
 		float: left;
-		margin: 0 0 20px 35px;
+		margin: 20px 0 20px 35px;
 		overflow: hidden;
 		width: 40%;
 	}

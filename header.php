@@ -48,7 +48,7 @@
 
 </head>
 
-<body onLoad="vai(), comecar();">
+<body <?php body_class(); ?>>
 <div id="wrapper" class="hfeed">
 	<div id="cabecalho">
     <a href="<?php echo home_url( '/' ); ?>" id="logo"></a>

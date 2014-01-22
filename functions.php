@@ -74,6 +74,8 @@ function excerpt($limit) {
       return nl2br($excerpt);
     }
 
+/** Adiciona Thumbnails no WP **/
+
 add_image_size( 'thumb-temas', 240, 9999 );
 add_image_size( 'thumb-medicos', 150, 9999 );
 add_image_size( 'noticias-home', 310, 9999 ); 
