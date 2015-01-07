@@ -63,20 +63,24 @@ get_header(); ?>
 <h2 class="titulo-home-noticias"><a href="<?php echo home_url('noticias'); ?>">Not&iacute;cias <span>Ver todas>></span></a></h2>
 
 <?php
-$args_loop_noticias = array(
-	'post_type' => 'post',
-	'orderby' => 'date',
-	'order' => 'DESC',
-	'posts_per_page' => '3',
-	'post_parent' => 0
-);
 
-$loop_noticias = new WP_Query( $args_loop_noticias ); if ( $loop_noticias->have_posts() ) {
-while ( $loop_noticias->have_posts() ) : $loop_noticias->the_post(); $count++;
-$class_noticias = 'cada-noticia-home';
+$loop_noticias = get_posts( array(
+    'post_type' => 'posts',
+    'posts_per_page' => 3,
+));
+
+if( $loop_noticias ) :
+    
+    foreach( $loop_noticias as $post ) : setup_postdata( $post );
+    
+    $count++;
+
+    $class_noticias = 'cada-noticia-home';
+
     if ( $count % 3 == 0 ) {
-$class_noticias = 'ultima-cada-noticia-home';
-}
+        $class_noticias = 'ultima-cada-noticia-home';
+    }
+
 ?>
 
 	<div class="<?php echo $class_noticias; ?>">
@@ -90,10 +94,15 @@ $class_noticias = 'ultima-cada-noticia-home';
         	<?php the_excerpt(); ?>
         </div><!-- .content-cada-noticia-home -->
     </div><!-- .<?php echo $class_noticias; ?> -->
-    
-<?php endwhile;
-wp_reset_query();
-}
+
+<?php
+
+    endforeach;
+
+    wp_reset_postdata();
+
+endif;
+
 ?>
 
 </div><!-- #noticias-home -->
